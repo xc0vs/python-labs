@@ -8,10 +8,10 @@ import hashlib
 
 credentials = {"login": "petrenko_o", "password": "526df7eacac2c6d94e4d10ee30ea7a53", "name": "Петренко Олександр Іванович"} #password = b6pHmERu
 
-def check_password():
+def check_password(cred):
     p = input("Enter your password: ")
-    if hashlib.md5(p.encode()).hexdigest() == credentials["password"]:
+    if hashlib.md5(p.encode()).hexdigest() == cred["password"]:
         print("Login is succesfull")
     else : print("Password is incorrect")
     
-check_password()
+check_password(credentials)
