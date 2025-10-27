@@ -3,8 +3,6 @@ log_file_path = "./apache_logs.txt"
 def analyze_log_file(log_file_path):
     status_codes = {}
     try:
-        # Треба переробити повністю логіку
-
         with open(log_file_path, "rt") as f: 
             for line in f:
                 parts = line.split('"')
