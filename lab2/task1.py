@@ -11,11 +11,12 @@ def analyze_log_file(log_file_path):
                     status_codes[code] = status_codes.get(code, 0) + 1
         return status_codes
     except FileNotFoundError:
-        return "File Not Found Error"
+        print("File Not Found Error")
     except IOError:
-        return "IO Error"
+        print("IO Error")
     except:
-        return "An undefined error has occurred"
+        print("An undefined error has occurred")
 
-    
-print(analyze_log_file(log_file_path))
+
+codes = analyze_log_file(log_file_path)
+print(codes)
