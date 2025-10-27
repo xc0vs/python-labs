@@ -1,4 +1,4 @@
-log_file_path = "./apache_logs.txt"
+log_file_path = "./task1_files/apache_logs.txt"
 
 def analyze_log_file(log_file_path):
     status_codes = {}
@@ -15,7 +15,7 @@ def analyze_log_file(log_file_path):
     except IOError:
         return "IO Error"
     except:
-        "An undefined error has occurred"
+        return "An undefined error has occurred"
 
     
 print(analyze_log_file(log_file_path))
