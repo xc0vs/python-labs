@@ -20,7 +20,7 @@ def filter_ips(input_file_path, output_file_path, allowed_ips):
     except IOError:
         print(f"IO Error '{output_file_path}'")
     except:
-            print("An undefined error has occurred: ")
+        print("An undefined error has occurred: ")
             
 
 filter_ips(input_file_path, output_file_path, allowed_ips)
