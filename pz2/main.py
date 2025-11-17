@@ -2,7 +2,7 @@ from classes import Administrator, RegularUser, GuestUser, AccessControl
 
 # Авторство коду:
 # Файл classes.py: Реалізація всіх класів написана власноруч.
-# Файл main.py: Скрипт для тестування функціоналу згенеровано за допомогою Gemini
+# Файл main.py: Скрипт для тестування функціоналу згенеровано за допомогою Gemini 2.5
 
 # --- Start of the verification script ---
 
