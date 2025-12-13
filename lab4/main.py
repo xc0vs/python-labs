@@ -41,9 +41,9 @@ def authentication_check(login, password):
         print("Authorization failed!")
 
 if __name__ == "__main__":
-    #add_user("admin", "admin")
-    #add_user("qwerty", "1234")
-    #update_password("qwerty", "H4rD_PasSw0rd")
+    add_user("admin", "admin")
+    add_user("qwerty", "1234")
+    update_password("qwerty", "H4rD_PasSw0rd")
     inp_password = input("Введіть пароль для admin:")
     authentication_check("admin", inp_password)
     
